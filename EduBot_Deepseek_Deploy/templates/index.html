@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EduBot — Chat</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>EduBot 🤖</h1>
+      <p class="tagline">Your smart study companion — powered by OpenRouter</p>
+    </header>
+
+    <section id="chat-area">
+      <div id="chat-box" aria-live="polite"></div>
+      <form id="chat-form">
+        <input id="user-input" type="text" autocomplete="off" placeholder="Ask a question..." />
+        <button id="send-btn" type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>Made with ❤️ — keep your API key secret (set as OPENROUTER_API_KEY)</footer>
+  </main>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
